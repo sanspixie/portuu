@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="text-center my-5">
+    <h1>Hello, I'm Sandhya Rai</h1>
+    <p class="lead">Hi, I’m Sandhya Rai.
+A Bachelor’s level student passionate about learning, creativity, and personal growth.
+Welcome to my portfolio where I showcase my academic projects, skills, and experiences.
+🥸</p>
+    <a href="{{ url_for('projects_page') }}" class="btn btn-primary btn-lg mt-3">View My Projects</a>
+</div>
+
+<!-- Featured Projects -->
+<h2 class="mt-5 mb-3 text-center">Featured Projects</h2>
+<div class="row">
+    {% for project in projects %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            <img src="{{ project.image_url }}" class="card-img-top" alt="{{ project.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description[:100] }}...</p>
+                {% if project.project_link %}
+                <a href="{{ project.project_link }}" class="btn btn-sm btn-outline-primary" target="_blank">View Project</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

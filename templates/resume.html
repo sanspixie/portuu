@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Resume{% endblock %}
+
+{% block content %}
+<h2 class="my-5 text-center">My Resume</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Education</h4>
+        <ul>
+            <li>Motivated Bachelor’s level student seeking opportunities to apply academic knowledge, develop practical skills, and gain professional experience in a growth-oriented environment.</li>
+            <li>High School, Texas College</li>
+        </ul>
+
+        <h4>Experience</h4>
+        <ul>
+            <li>Intern at Web Solutions - Backend Development</li>
+            <li>Freelance Web Developer</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h4>Skills</h4>
+        <ul>
+            <li>MS Word, Excel, PowerPoint
+</li>
+            <li>Communication
+Teamwork
+Time Management
+Problem Solving</li>
+            <li>Responsive Web Design, UI/UX</li>
+        </ul>
+
+        <h4>Download Resume</h4>
+        <a href="{{ url_for('static', filename='resume.pdf') }}" class="btn btn-primary" target="_blank">Download PDF</a>
+    </div>
+</div>
+{% endblock %}

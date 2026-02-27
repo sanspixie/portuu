@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+
+    <!-- About Me Section -->
+    <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+            <img src="{{ url_for('static', filename='images/myphoto.png') }}"
+     class="img-fluid rounded-circle mb-3"
+     alt="Profile Image">
+
+
+
+        </div>
+
+        <div class="col-md-8">
+            <h2>About Me</h2>
+            <p>
+                Hello! I’m <strong>Sandhya Rai</strong>, Throughout my academic journey, I have worked on various assignments and projects that helped me strengthen my analytical thinking, communication skills, and teamwork abilities.
+My goal is to continuously improve myself and build a successful career in my chosen field.
+            <p>
+                This portfolio showcases my projects, skills, and experience. I enjoy learning
+                new tools and continuously improving my development skills.
+            </p>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Skills Section -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="mb-3">My Skills</h3>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">HTML5</li>
+                        <li class="list-group-item">CSS3</li>
+                        <li class="list-group-item">Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">Flask</li>
+                        <li class="list-group-item">Python</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">SQLAlchemy</li>
+                        <li class="list-group-item">Git & GitHub</li>
+                        <li class="list-group-item">Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Education / Experience -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Education & Experience</h3>
+            <p>
+                🎓 Student of Web Technology  
+                <br>
+                💻 Experience in developing academic and personal web projects  
+                <br>
+                🚀 Interested in full-stack development and UI/UX design
+            </p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

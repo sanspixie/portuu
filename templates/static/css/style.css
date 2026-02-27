@@ -1,0 +1,213 @@
+/* =======================
+    GENERAL STYLING
+======================= */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff1f6; /* very light baby pink */
+    color: #4a2c3a; /* soft dark pink-brown text */
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: #c94a7c; /* main pink heading */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =======================
+    NAVBAR
+======================= */
+.navbar {
+    background-color: #f7b7cc !important; /* baby pink */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #4a2c3a !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* =======================
+    HERO SECTION
+======================= */
+.hero {
+    background: linear-gradient(135deg, #f7b7cc, #fbd3e1);
+    color: #4a2c3a;
+    padding: 100px 20px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* =======================
+    BUTTONS
+======================= */
+.btn-primary {
+    background-color: #f28db2;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e26a9c;
+}
+
+.btn-secondary {
+    background-color: #f7b7cc;
+    border: none;
+    color: #4a2c3a;
+}
+
+.btn-secondary:hover {
+    background-color: #f28db2;
+    color: white;
+}
+
+/* =======================
+    CARDS (PROJECTS)
+======================= */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(242, 141, 178, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(242, 141, 178, 0.4);
+}
+
+.card-title {
+    color: #c94a7c;
+}
+
+.card-text {
+    color: #6b3c4f;
+}
+
+/* =======================
+    FORM STYLING
+======================= */
+form input,
+form textarea {
+    border-radius: 8px;
+    border: 1px solid #f2a7c6;
+    padding: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #e26a9c;
+    box-shadow: 0 0 5px rgba(226, 106, 156, 0.5);
+}
+
+form button {
+    border-radius: 8px;
+}
+
+/* =======================
+    FOOTER
+======================= */
+footer {
+    background-color: #f7b7cc;
+    color: #4a2c3a;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* =======================
+    IMAGES
+======================= */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* =======================
+    TABLES (Admin Dashboard)
+======================= */
+table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #f28db2;
+    color: white;
+}
+
+td, th {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #fff1f6;
+}
+
+/* =======================
+    ALERTS (FLASH MESSAGES)
+======================= */
+.alert-success {
+    background-color: #fbd3e1;
+    color: #4a2c3a;
+    border: none;
+}
+
+.alert-danger {
+    background-color: #f28db2;
+    color: white;
+    border: none;
+}
+
+/* =======================
+    RESPONSIVE DESIGN
+======================= */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* =======================
+    BACK TO TOP BUTTON
+======================= */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #f28db2;
+    color: white;
+    border: none;
+}
